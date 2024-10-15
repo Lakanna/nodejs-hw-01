@@ -10,11 +10,11 @@ export const addOneContact = async () => {
 
     const data = [...currentContacts, newContact];
 
-    await writeContacts(JSON.stringify(data));
+    await writeContacts(data);
   } catch (error) {
     console.error(error);
   }
 };
 
-const respons = await addOneContact();
-console.log(respons);
+// const respons = await addOneContact();
+// console.log(respons);

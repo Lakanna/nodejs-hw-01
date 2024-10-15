@@ -14,7 +14,7 @@ const generateContacts = async (number) => {
 
     const allContact = [...currentContacts, ...arrOfContacts];
 
-    await writeContacts(JSON.stringify(allContact));
+    await writeContacts(allContact);
   } catch (error) {
     console.log('Error', error);
   }
