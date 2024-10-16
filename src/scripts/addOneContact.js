@@ -9,6 +9,7 @@ export const addOneContact = async () => {
     const currentContacts = await readContacts();
 
     const data = [...currentContacts, newContact];
+    // console.log(data, 'data');
 
     await writeContacts(data);
   } catch (error) {
@@ -16,5 +17,5 @@ export const addOneContact = async () => {
   }
 };
 
-// const respons = await addOneContact();
+await addOneContact();
 // console.log(respons);
